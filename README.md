@@ -1,4 +1,4 @@
-# Project 1
+# BougieBudget.net
 My first "major group project" at KU Coding Bootcamp, Summer 2017.
 
 # Collaborators

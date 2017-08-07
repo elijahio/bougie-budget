@@ -1,9 +1,3 @@
-/*!
- * Vitality v2.0.0 (http://themes.startbootstrap.com/vitality-v2.0.0)
- * Copyright 2013-2017 Start Bootstrap
- * Purchase a license to use this theme at (https://wrapbootstrap.com)
- */
-
 @media (min-width:992px) {
     div#wrapper:before {
         content: "";
@@ -130,16 +124,18 @@ body {
 }
 
 a {
-    color: #1F7FFF;
+    color: #000;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s;
+    /*font-style: italic;*/
 }
 
 a:hover,
 a:focus {
-    color: #ffa507;
+    color: #1F7FFF;
     text-decoration: none;
+    /*font-style: normal;*/
 }
 
 p {
