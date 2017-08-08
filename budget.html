@@ -2,135 +2,119 @@
 <html class="no-js" lang="en-US">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
-  <!--<link rel="stylesheet" href="css/main.css"> -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <!--<link rel="stylesheet" href="css/main.css"> -->
 </head>
 
 <body>
-  <!-- Container for all the content on the page -->
-  <div class="container">
-
-    <!-- Jumbotron header. -->
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="jumbotron text-center">
-          <h1 class="white-font">Bougie Budget</h1>
-          <h2>Calculate and Compare your budget relative to a zip code</h2>
+    <!-- Container for all the content on the page -->
+    <div class="container">
+        <!-- Jumbotron header. -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="jumbotron text-center">
+                    <h1 class="white-font">Bougie Budget</h1>
+                    <h2>Calculate and Compare your budget relative to a zip code</h2>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Row that contains both the income/expenses panel and the results panel -->
-    <div class="row">
-      <!-- Income and Expenses panel info -->
-      <div class="col-md-8">
-        <div class="panel panel-default">
-          <div class="panel-heading text-center">Income and Expenses Stuff</div>
-          <div class="panel-body">
-            <div class="row">
-              <div class="col-md-4">
-
-                <label for="#">Income</label>
-                <div class="input-group">
-                  <input type="text" class="form-control" aria-describedby="basic-addon1">
+        <!-- Row that contains both the income/expenses panel and the results panel -->
+        <div class="row">
+            <!-- Income and Expenses panel info -->
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">Income and Expenses Stuff</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="#">Income</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-describedby="basic-addon1">
+                                </div>
+                                <br>
+                                <button type="button" class="btn btn-primary">Add</button>
+                                <!-- <button type="button" class="btn btn-primary" id="clear">Clear Results</button> -->
+                            </div>
+                            <div class="col-md-6">
+                                <label for="#">Income stuff</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-4">
+                                <label for="#">More Income stuff</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-describedby="basic-addon1">
+                                </div>
+                            </div> -->
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="#">Expenses</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-describedby="basic-addon1">
+                                </div>
+                                <br>
+                                <button type="button" class="btn btn-primary">Add</button>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="#">More Expenses</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-4">
+                                <label for="#">Even More Expenses</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-describedby="basic-addon1">
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
                 </div>
-                <br>
-                <button type="button" class="btn btn-primary">Add</button>
-                <!-- <button type="button" class="btn btn-primary" id="clear">Clear Results</button> -->
-              </div>
-
-              <div class="col-md-4">
-
-                <label for="#">Income stuff</label>
-                <div class="input-group">
-                  <input type="text" class="form-control" aria-describedby="basic-addon1">
-                </div>
-
-              </div>
-              <div class="col-md-4">
-
-                <label for="#">More Income stuff</label>
-                <div class="input-group">
-                  <input type="text" class="form-control" aria-describedby="basic-addon1">
-                </div>
-
-              </div>
             </div>
-
-                <hr>
-
-            <div class="row">
-              <div class="col-md-4">
-
-                <label for="#">Expenses</label>
-                <div class="input-group">
-                  <input type="text" class="form-control" aria-describedby="basic-addon1">
+            <!-- Results panel -->
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">Result Box</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2><strong>Info Here</strong></h2></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2><strong>Info Here</strong></h2></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2><strong>Info Here</strong></h2></div>
+                        </div>
+                    </div>
                 </div>
-
-              </div>
-              <div class="col-md-4">
-
-                <label for="#">More Expenses</label>
-                <div class="input-group">
-                  <input type="text" class="form-control" aria-describedby="basic-addon1">
-                </div>
-
-              </div>
-              <div class="col-md-4">
-
-                <label for="#">Even More Expenses</label>
-                <div class="input-group">
-                  <input type="text" class="form-control" aria-describedby="basic-addon1">
-                </div>
-
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-
-      <!-- Results panel -->
-      <div class="col-md-4">
-        <div class="panel panel-default">
-          <div class="panel-heading text-center">Result Box</div>
-          <div class="panel-body">
-
-            <div class="row">
-              <div class="col-md-12"><h2><strong>Info Here</strong></h2></div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12"><h2><strong>Info Here</strong></h2></div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12"><h2><strong>Info Here</strong></h2></div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script>
-  window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-  <!-- Link the Javascript below -->
-  <!-- <script type="text/javascript" src="assets/js/data.js"></script> -->
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        <!-- Link the Javascript below -->
+        <!-- <script type="text/javascript" src="assets/js/data.js"></script> -->
 </body>
+
 </html>
