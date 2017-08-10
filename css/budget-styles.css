@@ -1,0 +1,125 @@
+/* Wallpaper */
+
+html {
+    background-image: url(../img/wallpaper.jpg);
+    background-position: center center;
+    height: 100vh;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.00);
+}
+
+
+/* Default Styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+/* Bootstrap Overrides */
+
+.jumbotron h1 {
+    font-size: 122px;
+    color: white;
+    line-height: 0.75;
+}
+
+.jumbotron h2 {
+    color: white;
+}
+
+.panel {
+    background-color: rgba(0, 0, 0, 0.00);
+    border: 0;
+}
+
+.panel-default>.panel-heading {
+    background-color: rgba(0, 0, 0, 0.00);
+    /*border: 0;*/
+}
+
+.panel-default>.panel-heading {
+    color: white;
+    font-size: 40px;
+}
+
+.input-group .form-control {
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.panel-heading {
+    margin-bottom: 20px;
+}
+
+label {
+    color: white;
+}
+
+
+/* Classes */
+
+.input-group {
+    width: 100%;
+    display: flex;
+}
+
+.custom-panel-header {
+    text-align: center;
+    /*margin-bottom: 20px;*/
+}
+
+.custom-panel-border {
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+
+/* IDs */
+
+#budget-hero {
+    /*background-image: url(../img/bougie-hero.jpg);*/
+    background-color: rgba(0, 0, 0, 0.00);
+}
+
+#add-income {
+    width: 100%;
+    border-width: 1px;
+    border-color: #7CFF94;
+    color: #7CFF94;
+    background-color: rgba(0,0,0,0);
+}
+
+#add-expense {
+	width: 100%;
+    border-width: 1px;
+    border-color: #FF7C93;
+    color: #FF7C93;
+    background-color: rgba(0,0,0,0);
+}
+
+
+
+
+/* Mobile Breakpoint */
+
+@media (max-width: 992px) {
+    .btn-primary {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

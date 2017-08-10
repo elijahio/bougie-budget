@@ -13,8 +13,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/budget-styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
     <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
     <!--<link rel="stylesheet" href="css/main.css"> -->
 </head>
@@ -24,8 +25,8 @@
     <div class="container">
         <!-- Jumbotron header. -->
         <div class="row">
-            <div class="col-lg-12">
-                <div class="jumbotron text-center">
+            <div class="col-md-12">
+                <div class="jumbotron text-center" id="budget-hero">
                     <h1 class="white-font">Bougie Budget</h1>
                     <h2>Calculate and Compare your budget relative to a zip code</h2>
                 </div>
@@ -34,25 +35,29 @@
         <!-- Row that contains both the income/expenses panel and the results panel -->
         <div class="row">
             <!-- Income and Expenses panel info -->
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <div class="panel panel-default">
-                    <div class="panel-heading text-center">Income and Expenses Stuff</div>
+                    <!-- <div class="panel-heading text-center">Income &amp; Expenses</div> -->
                     <div class="panel-body">
+                        <h2 class="custom-panel-header">Income</h2>
+                        <hr class="custom-panel-border">
                         <div class="row">
                             <div class="col-md-6">
-                                <label for="#">Income</label>
+                                <label for="#">Income Label</label>
                                 <div class="input-group">
                                     <input type="text" class="form-control" aria-describedby="basic-addon1">
                                 </div>
                                 <br>
-                                <button type="button" class="btn btn-primary">Add</button>
                                 <!-- <button type="button" class="btn btn-primary" id="clear">Clear Results</button> -->
                             </div>
                             <div class="col-md-6">
-                                <label for="#">Income stuff</label>
+                                <label for="#">Amount ($)</label>
                                 <div class="input-group">
                                     <input type="text" class="form-control" aria-describedby="basic-addon1">
                                 </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-primary" id="add-income">ADD ROW</button>
                             </div>
                             <!-- <div class="col-md-4">
                                 <label for="#">More Income stuff</label>
@@ -61,21 +66,26 @@
                                 </div>
                             </div> -->
                         </div>
-                        <hr>
+                        <br>
+                        <h2 class="custom-panel-header">Expenses</h2>
+                        <hr class="custom-panel-border">
                         <div class="row">
                             <div class="col-md-6">
-                                <label for="#">Expenses</label>
+                                <label for="#">Expense Label</label>
                                 <div class="input-group">
                                     <input type="text" class="form-control" aria-describedby="basic-addon1">
                                 </div>
                                 <br>
-                                <button type="button" class="btn btn-primary">Add</button>
+                                <!-- <button type="button" class="btn btn-primary" id="clear">Clear Results</button> -->
                             </div>
                             <div class="col-md-6">
-                                <label for="#">More Expenses</label>
+                                <label for="#">Amount ($)</label>
                                 <div class="input-group">
                                     <input type="text" class="form-control" aria-describedby="basic-addon1">
                                 </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-primary" id="add-expense">ADD ROW</button>
                             </div>
                             <!-- <div class="col-md-4">
                                 <label for="#">Even More Expenses</label>
@@ -88,10 +98,11 @@
                 </div>
             </div>
             <!-- Results panel -->
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="panel panel-default">
-                    <div class="panel-heading text-center">Result Box</div>
                     <div class="panel-body">
+                        <h2 class="custom-panel-header">Expenses</h2>
+                        <hr class="custom-panel-border">
                         <div class="row">
                             <div class="col-md-12">
                                 <h2><strong>Info Here</strong></h2></div>
