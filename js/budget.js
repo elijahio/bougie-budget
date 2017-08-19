@@ -32,7 +32,7 @@ $(document).ready(function() {
                 console.log(response);
                 var results = response.data[0].embed_url;
 
-                $('#motivator-display').append(results);
+                $('#motivator-display').attr("src", results);
 
                 $('#motivator-input').val("");
             });
