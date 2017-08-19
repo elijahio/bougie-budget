@@ -1,5 +1,18 @@
 $(document).ready(function() {
-    //Input zip code-Page 1
+
+    //Average gas call
+
+    var queryURLGas = "https://www.quandl.com/api/v3/datasets/FRED/GASREGCOVW.json?api_key=YLrr6a7wymzzjhMCd_xr"
+
+    $.ajax({
+            url: queryURLGas,
+            method: "GET"
+        })
+        .done(function(response) {
+            var results = response.dataset.data[0][1];
+            console.log(results);
+            $('#gas').text(results);
+        })
 
     //Submit zip
     $('#zip-submit').on('click', function(event) {
@@ -22,26 +35,32 @@ $(document).ready(function() {
                 $('#motivator-display').append(results);
 
                 $('#motivator-input').val("");
-
-                // location.href = "budget.html";
-
-
-
-            })
-
+            });
     });
 
+    //NASDAQ call
+    var queryURLNasdaq = "https://www.quandl.com/api/v3/datasets/NASDAQOMX/COMP.json?api_key=YLrr6a7wymzzjhMCd_xr&start_date=2017-08-12";
 
-    // Adding income button function.
-    $("#add-income").click(function() {
-        $("#income-block").append("<div class='row repeating-income-row'> <div class='col-md-6'> <div class='input-group'> <input type='text' class='form-control' id='income-label-input' aria-describedby='basic-addon1' placeholder='Type your custom input label here.'> </div> <br> </div> <div class='col-md-6'> <div class='input-group'> <input type='text' class='form-control' id='income-amount-input' aria-describedby='basic-addon1' placeholder='1000'> </div> </div> </div>");
-    });
-    // Adding expense button function.
-    $("#add-expenses").click(function() {
-        $("#expenses-block").append("<div class='row repeating-expenses-row'> <div class='col-md-6'> <div class='expenses-group'> <input type='text' class='form-control' id='expenses-label-input' aria-describedby='basic-addon1' placeholder='Type your custom input label here.'> </div> <br> </div> <div class='col-md-6'> <div class='expenses-group'> <input type='text' class='form-control' id='expenses-amount-input' aria-describedby='basic-addon1' placeholder='1000'> </div> </div> </div>");
+    $.ajax({
+            url: queryURLNasdaq,
+            method: "GET"
+        })
+        .done(function(numbers) {
+            var numbers = numbers.dataset.data[0][1];
+            console.log(numbers);
+            $("#nasdaq").text(numbers)
+        })
 
-
-    });
+    //S&P call
+    var queryURLSP = "https://www.quandl.com/api/v3/datasets/YALE/SPCOMP.json?api_key=YLrr6a7wymzzjhMCd_xr";
+    $.ajax({
+            url: queryURLSP,
+            method: "GET"
+        })
+        .done(function(spnumbers) {
+            var spnumbers = spnumbers.dataset.data[0][1];
+            $("#sp").text(spnumbers);
+        })
 
     //Values of Inputs
     // var firstIncome = $('#income-amount-input').val().trim();
@@ -65,4 +84,16 @@ $(document).ready(function() {
         $('.next-result1').html("<h4> Gas </h4>" + $("#gas-amount-input").val().trim());
         $(".results-text").append(resultsDiv1);
     })
+
+    // Adding income button function.
+    $("#add-income").click(function() {
+        $("#income-block").append("<div class='row repeating-income-row'> <div class='col-md-6'> <div class='input-group'> <input type='text' class='form-control' id='income-label-input' aria-describedby='basic-addon1' placeholder='Type your custom input label here.'> </div> <br> </div> <div class='col-md-6'> <div class='input-group'> <input type='text' class='form-control' id='income-amount-input' aria-describedby='basic-addon1' placeholder='1000'> </div> </div> </div>");
+    });
+    // Adding expense button function.
+    $("#add-expenses").click(function() {
+        $("#expenses-block").append("<div class='row repeating-expenses-row'> <div class='col-md-6'> <div class='expenses-group'> <input type='text' class='form-control' id='expenses-label-input' aria-describedby='basic-addon1' placeholder='Type your custom input label here.'> </div> <br> </div> <div class='col-md-6'> <div class='expenses-group'> <input type='text' class='form-control' id='expenses-amount-input' aria-describedby='basic-addon1' placeholder='1000'> </div> </div> </div>");
+
+
+    });
+
 });
