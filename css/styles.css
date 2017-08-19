@@ -245,6 +245,12 @@ textarea:focus {
     text-align: center;
 }
 
+#motivator-display {
+    width: 100%;
+    border-width: 0px;
+    margin-bottom: 50px;
+}
+
 #zip-submit {
     background-color: #1F7FFF;
     border: 0;
