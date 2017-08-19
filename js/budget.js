@@ -5,11 +5,10 @@ $(document).ready(function() {
     $('#zip-submit').on('click', function(event) {
         event.preventDefault();
         //grab zip
-        var zipcode = $('#zip-input').val().trim();
+        var motivator = $('#motivator-input').val().trim();
 
         //call API to find state of zip-input
-        var key = "AIzaSyAaK5LW94pb1MJ1T8qZ_am1xvXEdwEuC0w";
-        var queryURL = "https://maps.googleapis.com/maps/api/geocode/json?address=" + zipcode + "&key=" + key;;
+        var queryURL = "http://api.giphy.com/v1/gifs/search?api_key=89c449566588482fb23b28bd30d3312e&limit=1&q=" + motivator;
         console.log(queryURL);
 
         $.ajax({
@@ -18,13 +17,13 @@ $(document).ready(function() {
             })
             .done(function(response) {
                 console.log(response);
-                var results = response.results[0].address_components;
-                var city = results[1].long_name;
-                var stateAbv = results[4].short_name;
+                var results = response.data[0].embed_url;
 
-                $('#zip-input').val("");
+                $('#motivator-display').append(results);
 
-                location.href = "budget.html";
+                $('#motivator-input').val("");
+
+                // location.href = "budget.html";
 
 
 
@@ -33,7 +32,7 @@ $(document).ready(function() {
     });
 
 
-  // Adding income button function.
+    // Adding income button function.
     $("#add-income").click(function() {
         $("#income-block").append("<div class='row repeating-income-row'> <div class='col-md-6'> <div class='input-group'> <input type='text' class='form-control' id='income-label-input' aria-describedby='basic-addon1' placeholder='Type your custom input label here.'> </div> <br> </div> <div class='col-md-6'> <div class='input-group'> <input type='text' class='form-control' id='income-amount-input' aria-describedby='basic-addon1' placeholder='1000'> </div> </div> </div>");
     });

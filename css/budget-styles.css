@@ -161,4 +161,13 @@ p {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    .jumbotron {
+        padding-bottom: 0px !important;
+    }
+    h1 {
+        font-size: 38px !important;;
+    }
+    h2 {
+        font-size: 18px;
+    }
 }

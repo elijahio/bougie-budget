@@ -41,6 +41,12 @@
                 </div>
             </div>
         </div>
+        <!-- Row for motivator image -->
+        <div class="row">
+            <div class="col-md-12">
+                <div id="motivator-display"></div>
+            </div>
+        </div>
         <!-- Row that contains both the income/expenses panel and the results panel -->
         <div class="row">
             <!-- Income and Expenses panel info -->
@@ -123,15 +129,10 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div id="expenses-block">
-                                    <div class="col-md-6">
-                                        <label for="#">Expenses Label</label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="#">Amount ($)</label>
-                                    </div>
                                     <div class="row repeating-expenses-row">
                                         <div class="col-md-6">
                                             <div class="expenses-group">
+                                                <label for="#">Expenses Label</label>
                                                 <input type="text" class="form-control" id="expenses-label-input" placeholder="Type your custom input label here.">
                                             </div>
                                             <br>
@@ -139,6 +140,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="expenses-group">
+                                                <label for="#">Amount ($)</label>
                                                 <input type="text" class="form-control" id="expenses-amount-input" placeholder="1000">
                                             </div>
                                         </div>
