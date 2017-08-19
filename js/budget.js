@@ -66,11 +66,26 @@ $(document).ready(function() {
       $("#sp").text(spnumbers);
     })
 
+  var idCount = 0;
+  //Id itteration
+  function getNextID() {
+    idCount++;
+    return "id_" + idCount;
+
+  }
   //Values of Inputs
   // var firstIncome = $('#income-amount-input').val().trim();
   // var housingInput = $('#housing-amount-input').val().trim();
   // var utilityInput = $('#utilities-amount-input').val().trim();
   // var gasInput = $('#gas-amount-input').val().trim();
+
+
+
+
+
+
+
+
 
   // Dynamic add to results.
   var resultsDiv = $("<div class='next-result'>");
