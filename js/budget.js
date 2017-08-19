@@ -21,7 +21,7 @@ $(document).ready(function() {
         var motivator = $('#motivator-input').val().trim();
 
         //call API to find state of zip-input
-        var queryURL = "http://api.giphy.com/v1/gifs/search?api_key=89c449566588482fb23b28bd30d3312e&limit=1&q=" + motivator;
+        var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=89c449566588482fb23b28bd30d3312e&limit=1&q=" + motivator;
         console.log(queryURL);
 
         $.ajax({
