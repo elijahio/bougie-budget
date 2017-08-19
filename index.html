@@ -10,11 +10,11 @@
   <!-- Page Title -->
   <title>Bougie Budget</title>
   <!-- Favicon + iOS Icons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
-  <link rel="manifest" href="/manifest.json">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1a7c4b">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#1a7c4b">
   <meta name="theme-color" content="#ffffff">
   <!-- Edited Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -28,62 +28,14 @@
   <link href="vendor/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css">
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
   <link href="vendor/animate.css/animate.min.css" rel="stylesheet" type="text/css">
-  <!-- <link href="device-mockups/device-mockups.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <!-- Custom CSS -->
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <!-- Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
-
 </head>
 
 <body id="page-top">
-<<<<<<< HEAD
-    <div id="wrapper">
-    </div>
-    <!-- Masthead -->
-    <header class="masthead video">
-        <div class="overlay"></div>
-        <div class="container h-100">
-            <div class="row h-100">
-                <div class="col-12 my-auto text-center text-white">
-                    <!-- <img class="masthead-img img-fluid mb-3" src="img/glasses.svg" alt=""> -->
-                    <div class="masthead-title">Bougie Budget</div>
-                    <hr class="colored">
-                    <div class="masthead-subtitle">Enter your ZIP to continue:</div>
-                    <form action="budget.html">
-                        <br>
-                        <input id="zip-input" type="text" name="firstname" placeholder="ZIP Code">
-                        <input id="zip-submit" type="submit" value="Submit">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <br>
-                <br>
-                <h1 style="color: #1F7FFF">What is Bougie Budget?</h1>
-                <br>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8">
-                <p>Bougie Budget is a tool that helps you calculate your future savings (or losses) based on your levels of income and expenses. This tool also helps you compare your spending with average spending in specific categories, like rent and utilities, pulled specifically from your area&mdash;based on the ZIP code you entered upon arriving on the site.</p>
-            </div>
-            <div class="col-lg-4">
-                <h3>Contributors</h3>
-                <a href="https://github.com/elijahio" target="_blank"><span><i class="fa fa-github" aria-hidden="true"></i>  Elijah Kleinsmith</span></a>
-                <br>
-                <a href="https://github.com/CptMorganz" target="_blank"><span><i class="fa fa-github" aria-hidden="true"></i>  JP Morgan</span></a>
-                <br>
-                <a href="https://github.com/msoroark" target="_blank"><span><i class="fa fa-github" aria-hidden="true"></i>  Meg O'Roark</span></a>
-                <br>
-                <a href="https://github.com/risaco" target="_blank"><span><i class="fa fa-github" aria-hidden="true"></i>  Rhia Dixon</span></a>
-                <br>
-            </div>
-=======
   <div id="wrapper">
   </div>
   <!-- Masthead -->
@@ -95,13 +47,12 @@
           <!-- <img class="masthead-img img-fluid mb-3" src="img/glasses.svg" alt=""> -->
           <div class="masthead-title">Bougie Budget</div>
           <hr class="colored">
-          <div class="masthead-subtitle">Enter your ZIP to continue:</div>
+          <div class="masthead-subtitle">What motivates you to save?</div>
           <form action="">
             <br>
-            <input id="zip-input" type="text" name="firstname" placeholder="ZIP Code" maxlength="5">
+            <input id="motivator-input" type="text" name="firstname" placeholder="Buying a House">
             <input id="zip-submit" type="submit" value="Submit">
           </form>
->>>>>>> 03ae9e7d848eacea2d055146a4726d9ba2464b79
         </div>
       </div>
     </div>
@@ -132,52 +83,227 @@
         <br>
       </div>
     </div>
-<<<<<<< HEAD
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/tether/tether.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="vendor/owl-carousel/owl.carousel.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendor/vide/jquery.vide.min.js"></script>
-    <!-- <script src="vendor/mixitup/mixitup.min.js"></script> -->
-    <script src="vendor/wowjs/wow.min.js"></script>
-    <!-- Contact form JavaScript -->
-    <script src="js/contact_me.js"></script>
-    <script src="js/jqBootstrapValidation.js"></script>
-    <!-- Custom scripts for this theme -->
-    <script src="js/vitality.js"></script>
-    <!-- <script src="js/vitality-mixitup.js"></script> -->
-    <!-- Adding budget.js for storing and using the zip code user inputs -->
-    <script src="js/budget.js"></script>
-=======
   </div>
   <div class="container">
-    <br>
-    <br>
+    <hr id="content-sep">
   </div>
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/tether/tether.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="vendor/owl-carousel/owl.carousel.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-  <script src="vendor/vide/jquery.vide.min.js"></script>
-  <!-- <script src="vendor/mixitup/mixitup.min.js"></script> -->
-  <script src="vendor/wowjs/wow.min.js"></script>
-  <!-- Contact form JavaScript -->
-  <script src="js/contact_me.js"></script>
-  <script src="js/jqBootstrapValidation.js"></script>
-  <!-- Custom scripts for this theme -->
-  <script src="js/vitality.js"></script>
-  <!-- <script src="js/vitality-mixitup.js"></script> -->
-  <!-- Script for firebase input --->
-  <script src="js/zip.js"></script>
->>>>>>> 03ae9e7d848eacea2d055146a4726d9ba2464b79
+  <div class="container">
+    <!-- Row for motivator image -->
+    <div class="row">
+      <div class="col-md-12">
+        <!-- <iframe id="motivator-display" src="">Test</iframe> -->
+      </div>
+    </div>
+    <!-- Row that contains both the income/expenses panel and the results panel -->
+    <div class="row">
+      <!-- Income and Expenses panel info -->
+      <div class="col-md-7">
+        <div class="panel panel-default">
+          <!-- <div class="panel-heading text-center">Income &amp; Expenses</div> -->
+          <div class="panel-body">
+            <div class="row">
+              <h2 class="custom-panel-header">Income</h2>
+              <hr class="custom-panel-border">
+            </div>
+            <div id="income-block">
+              <div class="row repeating-income-row">
+                <div class="col-md-6">
+                  <label for="#">Income Label</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="income-label-input" placeholder="Type your custom input label here.">
+                  </div>
+                  <br>
+                  <!-- <button type="button" class="btn btn-primary" id="clear">Clear Results</button> -->
+                </div>
+                <div class="col-md-6">
+                  <label for="#">Amount ($)</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="income-amount-input" placeholder="1000">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <button type="button" class="btn btn-primary" id="add-income">ADD ROW</button>
+              </div>
+            </div>
+            <br>
+            <h2 class="custom-panel-header">Expenses</h2>
+            <hr class="custom-panel-border">
+            <div id="expenses-sr">
+              <div class="row">
+                <div class="col-md-6">
+                  <p id="housing-label"><strong>Rent / Mortgage</strong></p>
+                </div>
+                <div class="col-md-6">
+                  <label for="#">Amount ($)</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="housing-amount-input" data-mirror-amount="housingValue" data-mirror-label="housingLabel">
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-6">
+                  <p id="utilities-label"><strong>Utilities</strong></p>
+                </div>
+                <div class="col-md-6">
+                  <label for="utilities-amount">Amount ($)</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="utilities-amount-input" data-mirror-amount="utilitiesValue" data-mirror-label="utilitiesLabel">
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-6">
+                  <p id="gas-label"><strong>Gas</strong></p>
+                </div>
+                <div class="col-md-6">
+                  <label for="gas-amount">Amount ($)</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="gas-amount-input" data-mirror-amount="gasValue" data-mirror-label="gasLabel">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-12">
+                <div id="expenses-block">
+                  <div class="row repeating-expenses-row">
+                    <div class="col-md-6">
+                      <div class="expenses-group">
+                        <label for="#">Expenses Label</label>
+                        <input type="text" class="form-control" placeholder="Type your custom input label here.">
+                      </div>
+                      <br>
+                      <!-- <button type="button" class="btn btn-primary" id="clear">Clear Results</button> -->
+                    </div>
+                    <div class="col-md-6">
+                      <div class="expenses-group">
+                        <label for="#">Amount ($)</label>
+                        <input type="text" class="form-control" id="expenses-amount-input" placeholder="1000">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <button type="button" class="btn btn-primary" id="add-expenses">ADD ROW</button>
+                    <div style="margin-bottom: 150px"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Results panel -->
+      <div class="col-md-5">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2 class="custom-panel-header">Results</h2>
+            <hr class="custom-panel-border">
+            <div class="row">
+              <div class="col-md-12" id="expense-display">
+                <!-- <p>Motivation</p> -->
+                <iframe id="motivator-display" src=""></iframe>
+                <h3 class="results-text">
+                  No results available.
+                  <h4 class="hidden" id="housingLabel">Housing</h4>
+                  <h4 class="hidden" id="housingValue"></h4>
+                  <h4 class="hidden" id="utilitiesLabel">Utilities</h4>
+                  <h4 class="hidden" id="utilitiesValue"></h4>
+                  <h4 class="hidden" id="gasLabel">Gas</h4>
+                  <h4 class="hidden" id="gasValue"></h4>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/tether/tether.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+      <script src="vendor/owl-carousel/owl.carousel.js"></script>
+      <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+      <script src="vendor/vide/jquery.vide.min.js"></script>
+      <!-- <script src="vendor/mixitup/mixitup.min.js"></script> -->
+      <script src="vendor/wowjs/wow.min.js"></script>
+      <!-- Contact form JavaScript -->
+      <script src="js/contact_me.js"></script>
+      <script src="js/jqBootstrapValidation.js"></script>
+      <!-- Custom scripts for this theme -->
+      <script src="js/vitality.js"></script>
+      <script src="js/budget.js"></script>
+      <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.masthead-title', {
+          duration: 1000,
+          origin: 'bottom',
+          mobile: true,
+          // reset: true,
+        })
+        sr.reveal('.colored', {
+          duration: 1500,
+          origin: 'bottom',
+          mobile: true,
+          // reset: true,
+        })
+        sr.reveal('.masthead-subtitle', {
+          duration: 2000,
+          origin: 'bottom',
+          mobile: true,
+          // reset: true,
+        })
+        sr.reveal('#motivator-input, #zip-submit', {
+          duration: 3000,
+          origin: 'bottom',
+          mobile: true,
+          // reset: true,
+        })
+        sr.reveal('h1, .col-lg-8, .col-lg-4', {
+          duration: 2000,
+          origin: 'top',
+          mobile: true,
+          // reset: true,
+        })
+        sr.reveal('.custom-panel-header', {
+          duration: 500,
+          origin: 'bottom',
+          mobile: true,
+          // reset: true,
+        })
+        sr.reveal('#income-block', {
+          duration: 2000,
+          origin: 'top',
+          mobile: true,
+          // reset: true,
+        })
+        sr.reveal('#expenses-block, #expenses-sr', {
+          duration: 2000,
+          origin: 'top',
+          mobile: true,
+          // reset: true,
+        })
+        sr.reveal('.btn', {
+          duration: 2000,
+          origin: 'top',
+          mobile: true,
+          // reset: true,
+        })
+        sr.reveal('.results-text', {
+          duration: 2000,
+          origin: 'top',
+          mobile: true,
+          // reset: true,
+        })
+      </script>
 </body>
 
 </html>

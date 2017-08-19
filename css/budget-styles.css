@@ -11,6 +11,7 @@ body {
 }
 
 
+
 /* Default Styles */
 
 h1,
@@ -31,9 +32,10 @@ select:focus,
 textarea:focus {
     outline: none;
 }
+
 .form-control:focus {
     outline: none;
-    border-color: rgba(0,0,0,0);
+    border-color: rgba(0, 0, 0, 0);
 }
 
 
@@ -43,6 +45,7 @@ select:active,
 textarea:active {
     outline: none;
 }
+
 
 
 
@@ -79,6 +82,7 @@ textarea:active {
     border-top: 0;
     border-left: 0;
     border-right: 0;
+    border-radius: 0;
 }
 
 
@@ -88,6 +92,7 @@ textarea:active {
     border-top: 0;
     border-left: 0;
     border-right: 0;
+    border-radius: 0;
 }
 
 
@@ -95,9 +100,11 @@ textarea:active {
     margin-bottom: 20px;
 }
 
-label, p {
+label,
+p {
     color: white;
 }
+
 
 
 /* Classes */
@@ -119,6 +126,7 @@ label, p {
 
 
 
+
 /* IDs */
 
 #budget-hero {
@@ -131,16 +139,17 @@ label, p {
     border-width: 1px;
     border-color: #7CFF94;
     color: #7CFF94;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #add-expenses {
-	width: 100%;
+    width: 100%;
     border-width: 1px;
     border-color: #FF7C93;
     color: #FF7C93;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
+
 
 
 
@@ -151,5 +160,14 @@ label, p {
     .btn-primary {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    .jumbotron {
+        padding-bottom: 0px !important;
+    }
+    h1 {
+        font-size: 38px !important;;
+    }
+    h2 {
+        font-size: 18px;
     }
 }
